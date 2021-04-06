@@ -1,0 +1,9 @@
+.box {
+    width: 50%;
+    height: 200px;
+}
+
+.w3-leftbar {
+    border-left: 6px solid green !important
+}
+

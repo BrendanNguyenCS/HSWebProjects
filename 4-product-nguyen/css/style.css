@@ -1,0 +1,51 @@
+/* color theme */
+.w3-theme-l5 {color:#000 !important; background-color:#fffaf4 !important}
+.w3-theme-l4 {color:#000 !important; background-color:#ffedd9 !important}
+.w3-theme-l3 {color:#000 !important; background-color:#ffdcb4 !important}
+.w3-theme-l2 {color:#000 !important; background-color:#ffca8e !important}
+.w3-theme-l1 {color:#000 !important; background-color:#ffb968 !important}
+.w3-theme-d1 {color:#000 !important; background-color:#ff9822 !important}
+.w3-theme-d2 {color:#fff !important; background-color:#ff8902 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#e17800 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#c16700 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#a15600 !important}
+
+.w3-theme-light {color:#000 !important; background-color:#fffaf4 !important}
+.w3-theme-dark {color:#fff !important; background-color:#a15600 !important}
+.w3-theme-action {color:#fff !important; background-color:#a15600 !important}
+
+.w3-theme {color:#000 !important; background-color:#ffa742 !important}
+.w3-text-theme {color:#ffa742 !important}
+.w3-border-theme {border-color:#ffa742 !important}
+
+.w3-hover-theme:hover {color:#000 !important; background-color:#ffa742 !important}
+.w3-hover-text-theme:hover {color:#ffa742 !important}
+.w3-hover-border-theme:hover {border-color:#ffa742 !important}
+
+
+/* parallax */
+
+body, html {
+    height: 100%;
+    font-family: 
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('/img/vietnamese-food-banh-beo.jpg');
+    min-height: 100%;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}

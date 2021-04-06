@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Character encoding -->
+        <meta charset="UTF-8">
+        <!-- Title tag -->
+        <title>HTML Presentation - Sustainable Communities</title>
+        <!-- Viewport set to be mobile-friendly -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- W3.CSS style -->
+        <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- Custom style -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    </head>
+
+    <body class="w3-white">
+
+        <!-- Title Slide -->
+        <section id="slide-1" class="mySlides">
+            
+            <div class="w3-container w3-display-middle fs-img">
+                
+                <h1 class="w3-animate-right w3-animate-zoom w3-animate-opacity" style="color: white;">Industry, Innovation, and Infrastructure</h1>
+            
+            </div>
+            
+        </section>
+        
+        <!-- Problem Introduction Slide -->
+        <section id="slide-2" class="mySlides">
+            
+            <div class="w3-container w3-display-bottommiddle fs-img-2">
+                
+                <h1 class="w3-animate-zoom" style="color: black;">What is the problem?</h1>
+            
+            </div>
+            
+            <div class="card w3-display-right w3-orange" style="width: 42%; margin: 1%;">
+                <div class="w3-container">
+                    <p>Unlike us in a highly-developed country, there are a lot of people in the world who don't have the luxuries we have.</p>
+                    <p>Examples include:</p>
+                    <ul>
+                        <li>Cell phones</li>
+                        <li>Cars</li>
+                        <li>Public transportation</li>
+                        <li>Electricity</li>
+                    </ul>
+                    <p>Including the above, there are an inifnite number of things that could be listed that people in third-world countries don't have that we have.</p>
+                </div>
+            </div>
+            
+        </section>
+        
+        <!-- Full Screen Video -->
+        <section id="slide-3" class="mySlides">
+            
+            <video autoplay muted loop id="myVideo">
+                <source src="img/tempVid.mp4" type="video/mp4">
+            </video>
+            
+            <div class="content">
+                <h1>Imagine</h1>
+                <p>How would you react if you saw this but with no lights or building? Think about what your life would be like. What if you weren't in the vehicle travelling or that bus you pass doesn't exist.</p>
+                <p>Would you want your life to be like that?</p>
+                <!-- Button to pause/play the video with JavaScript -->
+                <button id="myBtn" onclick="videoButton()">Pause</button>
+            </div>
+            
+        </section>
+        
+        <!-- Why We Care Slide -->
+        <section id="slide-4" class="mySlides w3-container" style="margin: 1%;">
+            
+            <div class="w3-row">
+                <h1>Why should we care?</h1>
+            </div>
+            
+            <p>Here are some important facts that could relate to everyday life here is:</p>
+            
+            <div class="w3-row" style="margin: 0 5% 2% 5%;">
+                <p>About 2.6 billion people in the developing world can't access electricity 24/7.</p>
+                <p>1 to 1.5 billion people don't have access to reliable phone services.</p>
+                <p>2.5 billion people worldwide lack access to basic sanitation and almost 800 million people lack access to water.</p>
+            </div>
+            
+            <p>Imagine what our lives would be like if we didn't have any of the things listed above. Just for reference, here are just a small number of luxuries that we wouldn't have as a result of the above.</p>
+        
+            <div class="w3-row">
+                <div class="w3-col l3 m6 s12 w3-orange">
+                    <h3>Netflix</h3>
+                </div>
+                
+                <div class="w3-col l3 m6 s12 w3-orange">
+                    <h3>The Internet</h3>
+                </div>
+                
+                <div class="w3-col l3 m6 s12 w3-orange">
+                    <h3>Cars</h3>
+                </div>
+                
+                <div class="w3-col l3 m6 s12 w3-orange">
+                    <h3>Shelters</h3>
+                </div>
+            </div>
+            
+            <div class="w3-row">
+                <div class="w3-col l3 m6 s12 w3-orange">
+                    <h3>Clean Water</h3>
+                </div>
+                
+                <div class="w3-col l3 m6 s12 w3-orange">
+                    <h3>Electricity</h3>
+                </div>
+                
+                <div class="w3-col l3 m6 s12 w3-orange">
+                    <h3>Phone Data</h3>
+                </div>
+                
+                <div class="w3-col l3 m6 s12 w3-orange">
+                    <h3>Clean, Healthy Food</h3>
+                </div>
+            </div>
+            
+            <p>Life would be terrible without all of these things, wouldn't it!</p>
+            
+        </section>
+        
+        <!-- Call to Action Grid -->
+        <section id="slide-5" class="mySlides w3-container">
+            
+            <div class="w3-row">
+                <h1>How You Could Help</h1>
+            </div>
+            
+            <div class="card w3-orange">
+                <img src="img/unido-logo.jpg" alt="UNIDO" style="width: 100%">
+                <div class="container">
+                    <h3><b>UNIDO</b></h3> 
+                    <h5>UNIDO, the United Nations Industrial Development Organization, is a branch of the UN (United Nations) that is focused on the development of industrial work in third-world countries. They have numerous projects throughout the world.</h5>
+                    <button id="callToActionButton" onclick="location.href='https://www.unido.org/'" type="button" class="w3-orange" style="border: 1px solid black; margin: 10px; align-content: center;">Learn More!</button>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <!-- slide indicators -->
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right " onclick="plusDivs(+1)">&#10095;</button>
+        
+    
+        <!-- Javascript -->
+        <script src="js/slideshow.js"></script>
+        <script src="js/video.js"></script>
+    </body>
+</html>

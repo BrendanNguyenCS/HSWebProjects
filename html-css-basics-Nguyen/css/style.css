@@ -1,0 +1,50 @@
+nav {
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: navy;
+    text-align: center;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+    ul.topnav li {
+        float: none;
+    }
+    header {
+        margin-top: 192px !important;
+    }
+}
+
+h2 {
+    color: aqua;
+    font-size: 24px;
+    background-color: navy;
+}
+
+.myphotos {
+    width: 250px;
+    height: auto;
+    float: left;
+    padding: 3%;
+    margin: 10px;
+}
+

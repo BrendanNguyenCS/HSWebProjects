@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+
+<!------ 1 
+    - create a folder called html-css-basics-quiz-yourlastname
+    - save this file in that folder
+    - create a folder called css and a folder called img
+    - add a lang attribute "en" to <html> tag
+----->
+<html lang="en">
+    
+    <!------ 2
+        add:
+            - meta charset UTF-8
+            - title tag "FirstName LastName" e.g. Mike Smith
+            - internal style
+            - link to external style sheet in css/style.css
+    ----->
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Brendan Nguyen</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <style>
+            body {
+                margin: 0 auto;
+                height: 1500px;
+            }
+            
+            header {
+                width: 100%;
+                height: 500px;
+                background-color: white;
+                text-align: center;
+                margin-top: 48px;
+            }
+        </style>
+        
+        <!----- 3 
+            - in your internal style tags, make the margin of your body "0 auto"
+            - make the height 1500px so you can test the scroll
+        ----->
+        
+        
+    </head>
+    
+    <body>
+        
+        <!------ 4
+            - add a fixed, responsive top nav here
+            - use what we learned from your current project
+            - include the topnav class and media query
+            - pick your favorite color for the background color
+        ----->
+        
+        <nav>
+            
+            <ul class="topnav">
+                
+                <li><a href="#objective">Objective</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#communityService">Community Service</a></li>
+                
+            </ul>
+        
+        </nav>
+        
+        
+        <!----- 5
+            - add the following id/bookmark links to your nav:
+                1. objective
+                2. education
+                3. photos
+                4. community service
+        ----->
+        
+        <header>
+            
+            <!----- 6
+                - find a high quality image of your spirit animal or favorite animal or yourself and create a header
+                - use pixlr.com/editor
+                - image size = 1440px W x 500px H
+                - create contrasting text layer with your favorite font with your first name and last name
+                - save the image in your img folder
+                - put the img here
+                --- 7
+                - use width and height attributes (same image size as above)
+                - use alt attribute to describe the image
+                - make the img responsive using internal css
+            ----->
+            
+            <img src="img/panda2.jpg" alt="My favorite animal: the panda">
+        
+        </header>
+                
+        <main>
+            
+            <section id="objective">
+                
+                <h2>Objective</h2>
+                
+                <!----- 8
+                    - use <h2> for alls section headings
+                    - use external css style your headings
+                    - change font color, size and background color of all <h2> tags to go with your nav
+                    --- 9
+                    - using an <h5> tag write a headline sentence: what is your job title at 25 and how are you going to get there?
+                ----->
+                
+                <h5>What is your job title at 25 and how are you going to get there?</h5>
+            
+            </section>
+            
+            <section id="education">
+                
+                <h2>Education</h2>
+                
+                <!----- 10
+                    - add Education heading with <h2>
+                    - add a link to Andover High School somewhere that opens in a new window
+                    - create a bullet list of your accomplishments e.g. GPA, clubs, sports, expected graduation month and year
+                ----->
+                <a href="https://www.aps1.net/302/Andover-High-School" target="_blank">Andover High School</a>
+                
+                <ul>
+                    <li>GPA: 3.7 unweighted</li>
+                    <li>Sports: basketball</li>
+                    <li>Graduation: June 2018</li>
+                </ul>
+            
+            </section>
+            
+            <!----- 11
+                - add the last two id links the sections below that link to top nav
+            ----->
+            
+            
+            <section id="photos" style="margin-bottom: 600px;">
+                
+                <h2>Photos</h2>
+                
+                <!----- 12
+                    - create Photos <h2>
+                    - add three images from your phone that represent your life or personal or professional experience
+                    - you can send images to your email or drive or connect to your computer
+                    - save images to your img folder
+                    --- 13
+                    - with external css create a class for these images "myphotos"
+                    - using the class make the images responsive, width: 300px; height: auto; float:left; padding: 1%;
+                ----->
+                <img src="img/f1.jpg" class="myphotos">
+                <img src="img/myself.jpg" class="myphotos">
+                <img src="img/pc.jpg" class="myphotos">
+            
+            </section>
+            
+            <section id="communityService">
+                
+                <!----- 14
+                    - download and save https://www.cityyear.org/sites/default/files/cypatch_125px.png
+                    - Turn this into a paragraph:
+                        At City Year, we’re working to bridge the gap in high-poverty communities between the support that students actually need, and what their schools are designed and resourced to provide. In doing so, we’re helping to increase graduation rates across the country, and changing the lives of the students we serve.
+                    - insert image just after opening <p>
+                    - using inline css:
+                        - float the image to the left
+                        - padding right and bottom should be 20px and padding top and left should be 0
+                        - make a border ONLY on the right side of the image that is 5px solid gray
+                ----->
+                <h2>Community Service</h2>
+                <p><img src="img/cypatch.png" style="float: left; padding: 0 20px 20px 0; border-right: 5px solid gray;">At City Year, we’re working to bridge the gap in high-poverty communities between the support that students actually need, and what their schools are designed and resourced to provide. In doing so, we’re helping to increase graduation rates across the country, and changing the lives of the students we serve.<p>
+            
+            </section>
+        
+        
+        </main>
+        
+        
+    </body>
+    
+</html>

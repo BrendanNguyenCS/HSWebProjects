@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+p {
+    font-family: 'Squada One', cursive;
+    font-size: 18px;
+}
+
+/* responsive body */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* navigation */
+nav {
+    background-color: darkred;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+    ul.topnav li {
+        float: none;
+    }
+    header {
+        margin-top: 192px !important;
+        height: auto;
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+        width: 100%;
+    }
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    margin-top: 48px;
+}
+
+/* slideshow */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: red;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.caption-text {
+  color: #eb1212;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: right;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #eb1212;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 10px 1px rgba(0, 0, 128, 0.57);
+    transition: 0.01s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 128, 0.57);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: white; /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: white;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid red;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: navy;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.title {
+    z-index: 1;
+    background: linear-gradient(to right, navy, white);
+    width: 100%;
+}
+
+.title h1 {
+    padding: 3%;
+    color: red;
+    text-align: center;
+}
+
+.modalBtn {
+    background-color: navy;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 10px;
+}
+
+/* table styling */
+.sbstats {
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 7px;
+    font-family: 'Squada One', cursive;
+    font-size: 14px;
+}
+
+th {
+    text-align: left;
+}
